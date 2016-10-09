@@ -1,0 +1,339 @@
+page-home {
+    // Buttons in navigation bar
+    ion-navbar {
+        .bar-button-clear-primary {
+            background-color: transparent;
+        }
+    }
+
+
+    // Different sizes for icons
+    .icon-sm {
+        font-size: 16px;
+    }
+
+    .icon-md {
+        font-size: 28px;
+    }
+
+    .icon-lg {
+        font-size: 48px;
+    }
+
+
+    // Menu drawer
+    ion-menu ion-toolbar img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .product-title {
+        min-height: 7.5rem;
+
+        .toolbar-title {
+            font-size: 1.8rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            // white-space: normal;
+            text-align: end;
+        }
+    }
+
+    // For a button as list item, add some space between icon and button text
+    button[ion-item] ion-icon {
+        padding-right: 1.5rem;
+        font-size: 2rem;
+    }
+
+    ion-toolbar ion-buttons {
+        // Button groups in a toolbar must be displayed inline
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+
+        // Buttons will distribute the width evenly
+        button {
+            display: flex;
+            flex-basis: 100%;
+        }
+    }
+
+    .border-top {
+        border-top: 1px lightgrey solid !important;
+    }
+
+    // Light font used to distinguish a propert label
+    .property-label {
+        color: grey;
+        font-weight: 300;
+    }
+
+    // Light text
+    // Example: treatment summary header
+    .light-text {
+        font-weight: 300;
+    }
+
+
+    // Login page
+    #login {
+        margin-top: 8rem;
+
+        ion-card-header {
+            // Adjustments to product logo in login screen
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            // align-content: center;
+
+            > img {
+                width: 70%;
+                // Setting relative height does not display the image in the device
+                // height: 70%;
+            }
+
+            > h2 {
+                font-size: 3.2rem;
+            }
+        }
+
+        button {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+    }
+
+    // List header
+    ion-list-header {
+        // Override default vertical padding
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+
+
+    // Document list
+    ion-item {
+        // Override no wrap setting of inner label of a list item
+        h2, h3 {
+            white-space: normal;
+        }
+    }
+
+    .document-attributes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        p {
+            font-size: 1.4rem;
+            white-space: nowrap;
+            margin-right: 1.5rem;
+        }
+    }
+
+    // Dashboard
+    $color-searches: #558ba2;
+    $color-collections: #382457;
+    $color-libraries: #860057;
+    $color-views: #aca800;
+    $color-todos: #005880;
+    $color-notifications: #2ea140;
+
+    tile ion-card-header {
+        padding: 1rem;
+
+        button {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            .button-inner {
+                // Align button content to the left
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    tile.searches ion-card-header button {
+        background-color: $color-searches;
+    }
+
+    tile.collections ion-card-header button {
+        background-color: $color-collections;
+    }
+
+    tile.libraries ion-card-header button {
+        background-color: $color-libraries;
+    }
+
+    tile.views ion-card-header button {
+        background-color: $color-views;
+    }
+
+    tile.todos ion-card-header button {
+        background-color: $color-todos;
+    }
+
+    tile.notifications ion-card-header button {
+        background-color: $color-notifications;
+    }
+
+    tile button.item {
+        // Reduce the padding of the item that gives an inset effect
+        padding-left: 0.4rem;
+    }
+
+    tile ion-badge {
+        // Add a separation bewteen badge and next inline element (e.g. icon)
+        margin-right: 0.4rem;
+    }
+
+    // Pagination (slides)
+    .swiper-pagination {
+        bottom: -5px !important;
+    }
+
+
+    // Document summary card
+    ion-card.summary {
+        ion-card-header {
+            // TODO Reuse SASS variables
+            background-color: #327eff;
+            color: white;
+        }
+
+        ion-card-content {
+            h2 {
+                margin-top: 0.8rem;
+                margin-bottom: 0.8rem;
+            }
+        }
+    }
+
+    // General container styling
+    // ion-content {
+        // Background color according to FDUI
+        // background-color: #e7f5f9;
+    // }
+
+
+
+    .eag-home-button {
+    min-height: 120px;
+
+    }
+    .eag-home-button img {
+    width:40%;
+
+    }
+
+    .eag-home-icon {
+        width: 148px;
+    }
+
+    .eag-home-align{
+        text-align: center;
+    }
+
+    .eag-home-container-flex {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .eag-home-container {
+        padding: 5px;
+        margin: auto;
+    }
+
+    .eag-home-label {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    transform: translateY(-75%);
+    }
+
+    .eag-no-margin {
+    margin: 0px !important;
+    }
+
+    .eag-less-padding {
+    padding: 4px;
+    }
+
+    .eag-no-padding {
+    padding: 0px;
+    }
+
+    .eag-custom-selector-padding {
+    padding: 0px;
+    padding-left: 3px;
+    }
+
+    .eag-text-center {
+    text-align:center;
+    }
+
+    .eag-text-left {
+    text-align:left;
+    }
+
+    .eag-text-right {
+    text-align:right;
+    }
+
+    .eag-receipt-area{
+    width:100%;
+    height:30%;
+    }
+
+    .eag-bg-light-blue{
+    background-color: #81D4FA;
+    }
+
+    .eag-float-left{
+    float: left;
+    }
+
+    .eag-float-right{
+    float: right;
+    }
+
+    .eag-claimtotal-label{
+    font-size: small;
+    padding-right:5px;
+    }
+
+    .eag-claimtotal{
+    font-size: x-large;
+    }
+
+    /*.eag-claimheader * {
+    background-color: #81D4FA; // #E1F5FE
+    } */
+
+    .eag-center-container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .eag-center {
+        padding: 5px;
+        margin: auto;
+        transform: translateY(5%);
+    }
+
+    .eag-full-width {
+    width: 100%;
+    }
+}
